@@ -67,7 +67,7 @@ if strcmp(name, 'polbooks')
 end
 
 if strcmp(name, 'Cornell')
-    t=4;k=6;l=6;dc=0.02;
+    t=6;k=4;l=8;dc=0.02;
     X=getEmbeddingMatrix(A,S,t,k,l);
     [D, rho, delta] = ComputeRhoAndDelta(X,dc);
     [C,initial_centers_id,sorted_id] = FindNumberAndCenter(rho, delta);
